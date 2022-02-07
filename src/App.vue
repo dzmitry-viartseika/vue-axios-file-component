@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <app-file />
+    ***************************************
+    <hr>
+    <hr>
+    <hr>
+    <app-multiple-files />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppFile from './components/Elements/AppFile/AppFile.vue';
+import AppMultipleFiles from './components/Elements/AppFile/AppMultipleFiles.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppFile,
+    AppMultipleFiles,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
